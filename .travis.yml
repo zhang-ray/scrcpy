@@ -5,5 +5,6 @@ addons:
     - mingw-w64 
     - mingw-w64-tools
     - openjdk-8-jdk
+    - meson
     - tree
 script: make -f Makefile.CrossWindows && tree
