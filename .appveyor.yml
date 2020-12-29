@@ -1,7 +1,7 @@
 image: Ubuntu2004
 
 install:
-- sudo apt -y install mingw-w64 mingw-w64-tools openjdk-8-jdk meson
+- sudo apt -y install mingw-w64 mingw-w64-tools openjdk-8-jdk meson wget
 
 build_script:
 - make -f Makefile.CrossWindows
