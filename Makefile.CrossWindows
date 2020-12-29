@@ -16,7 +16,6 @@
 	zip-win32 \
 	sums release
 
-GRADLE ?= ./gradlew
 
 SERVER_BUILD_DIR := build-server
 WIN32_BUILD_DIR := build-win32
@@ -32,7 +31,6 @@ release: clean zip-win32 sums
 	@echo "Windows archives generated in $(DIST)/"
 
 clean:
-	$(GRADLE) clean
 	rm -rf "$(SERVER_BUILD_DIR)" "$(WIN32_BUILD_DIR)"  \
 		   "$(WIN32_NOCONSOLE_BUILD_DIR)"  "$(DIST)"
 
