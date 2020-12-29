@@ -1,0 +1,9 @@
+dist: bionic
+addons:
+  apt:
+    packages:
+    - mingw-w64 
+    - mingw-w64-tools
+    - openjdk-8-jdk
+    - tree
+script: make -f Makefile.CrossWindows && tree
